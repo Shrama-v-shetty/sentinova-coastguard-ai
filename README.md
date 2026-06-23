@@ -203,7 +203,7 @@ sentinova-coastguard-ai/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/sentinova-coastguard-ai.git
+git clone https://github.com/Shrama-v-shetty/sentinova-coastguard-ai.git
 cd sentinova-coastguard-ai
 ```
 
@@ -246,7 +246,7 @@ streamlit-geolocation
 
 Video Demonstration:
 
-*Add Google Drive or YouTube Link Here*
+https://drive.google.com/file/d/1dzEhcPVZxo5UBpX2FSUT6x7n-1I_AnN9/view?usp=sharing
 
 ---
 
