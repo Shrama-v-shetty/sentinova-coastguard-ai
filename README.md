@@ -174,6 +174,12 @@ The crack detection model is built using Transfer Learning with MobileNetV2.
 * Model saved as `crack_model.h5`
 
 ---
+## Dataset
+
+The training dataset is not included in this repository due to storage limitations.
+
+The crack detection model was trained on a labeled crack/non-crack image dataset using MobileNetV2 transfer learning. The trained model (`crack_model.h5`) is included for inference and demonstration purposes.
+
 
 ## Project Structure
 
@@ -189,11 +195,7 @@ sentinova-coastguard-ai/
 ├── dam image.png
 ├── requirements.txt
 ├── README.md
-│
-└── dataset/
-    └── train/
-        ├── crack/
-        └── no_crack/
+
 ```
 
 ---
