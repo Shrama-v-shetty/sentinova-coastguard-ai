@@ -256,7 +256,7 @@ https://drive.google.com/file/d/1dzEhcPVZxo5UBpX2FSUT6x7n-1I_AnN9/view?usp=shari
 
 Access the deployed application here:
 
-https://your-render-link.onrender.com
+https://sentinova-coastguard-ai.onrender.com/
 
 ## Future Enhancements
 
