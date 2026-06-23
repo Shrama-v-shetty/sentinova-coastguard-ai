@@ -1,12 +1,12 @@
-# sentinova-coastguard-ai
-CoastGuard AI is an AI-powered infrastructure monitoring and early warning system that detects structural defects, assesses risk severity, and supports authorities in proactive infrastructure safety management.
 # CoastGuard AI
 
 ### AI-Powered Infrastructure Monitoring & Early Warning System
 
-**CoastGuard AI** is an intelligent infrastructure monitoring platform developed by **Team Sentinova** for the Coastal Innovation Hackathon.
+**Built by Team Sentinova**
 
-The system leverages Artificial Intelligence, Computer Vision, Geolocation Tracking, and Automated Alerting to detect structural cracks in critical infrastructure and support timely decision-making for infrastructure safety.
+**Detect Early. Act Faster. Save Lives.**
+
+CoastGuard AI is an intelligent infrastructure monitoring platform that leverages Artificial Intelligence, Computer Vision, Geolocation Tracking, and Automated Alerting to detect structural cracks in critical infrastructure and support timely decision-making for infrastructure safety.
 
 ---
 
@@ -69,6 +69,35 @@ The platform combines computer vision, geolocation tracking, automated reporting
 
 * Built using Streamlit.
 * User-friendly interface for infrastructure monitoring.
+
+---
+
+## Screenshots
+
+### Home Dashboard
+
+<img width="1600" height="766" alt="image6" src="https://github.com/user-attachments/assets/b7e6093a-a8b2-434f-9a59-17888f350ab6" />
+
+### Crack Detection Dashboard
+<img width="1900" height="907" alt="image" src="https://github.com/user-attachments/assets/5113a61e-ca1f-42be-92e0-298cc469577c" />
+
+<img width="1910" height="837" alt="image" src="https://github.com/user-attachments/assets/d243ee50-a143-4e3f-8ece-9c172e973bc0" />
+
+
+
+
+### Severity Analysis
+<img width="1907" height="837" alt="image" src="https://github.com/user-attachments/assets/a3a7de04-a6ea-4dc5-b60b-b2632aab4af3" />
+<img width="1902" height="912" alt="image" src="https://github.com/user-attachments/assets/a07d9593-35b4-4e5c-ae04-ef2d20fe42c8" />
+<img width="1600" height="708" alt="image8" src="https://github.com/user-attachments/assets/480b70f7-7964-4f21-a575-b21407cb5800" />
+<img width="1596" height="690" alt="image" src="https://github.com/user-attachments/assets/613bc066-b7f5-425b-ad10-35fee056b19f" />
+
+### Alert Generation
+
+<img width="1602" height="757" alt="image" src="https://github.com/user-attachments/assets/9f700267-b799-42ec-83b9-0b8d9984f2ce" />
+<img width="1595" height="676" alt="image" src="https://github.com/user-attachments/assets/7ad61999-e3b9-463d-9a79-249cfdc3a5f7" />
+
+
 
 ---
 
@@ -158,6 +187,8 @@ sentinova-coastguard-ai/
 ├── crack_model.h5
 ├── reports.txt
 ├── dam image.png
+├── requirements.txt
+├── README.md
 │
 └── dataset/
     └── train/
@@ -169,26 +200,26 @@ sentinova-coastguard-ai/
 
 ## Installation & Setup
 
-### 1. Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/sentinova-coastguard-ai.git
 cd sentinova-coastguard-ai
 ```
 
-### 2. Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the Application
+### Run the Application
 
 ```bash
 streamlit run app.py
 ```
 
-### 4. Open in Browser
+### Open in Browser
 
 ```text
 http://localhost:8501
@@ -209,11 +240,13 @@ streamlit-folium
 streamlit-geolocation
 ```
 
-Generate automatically using:
+---
 
-```bash
-pip freeze > requirements.txt
-```
+## Demo Video
+
+Video Demonstration:
+
+*Add Google Drive or YouTube Link Here*
 
 ---
 
@@ -221,11 +254,11 @@ pip freeze > requirements.txt
 
 * Engineer verification workflow
 * Authority monitoring dashboard
+* Community reporting portal
 * Multi-language notifications
 * Mobile application integration
 * Real-time infrastructure monitoring
 * Predictive maintenance analytics
-* Community reporting portal
 * Emergency response coordination support
 
 ---
@@ -256,4 +289,10 @@ CoastGuard AI aims to:
 
 ---
 
-Built for the Coastal Innovation Hackathon.
+## License
+
+This project was developed for educational, research, and demonstration purposes.
+
+---
+
+Built with ❤️ by Team Sentinova.
