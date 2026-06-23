@@ -1,11 +1,12 @@
 import smtplib
 from email.mime.text import MIMEText
+import os
 
 def send_weekly_report():
 
-    sender_email = "your-email@gmail.com"
-    receiver_email = "authority-email@example.com"
-    password = "your-app-password"
+    sender_email = os.getenv("EMAIL_ID")
+    receiver_email = os.getenv("EMAIL_ID")
+    password = os.getenv("EMAIL_PASSWORD")
     try:
         with open("reports.txt", "r") as f:
             lines = f.readlines()

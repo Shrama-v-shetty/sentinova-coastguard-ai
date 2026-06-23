@@ -3,12 +3,13 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
+import os
 
 def send_email_alert(dam_name, severity, user_email, address, maps_link, image_path, lat=None, lon=None, selected_location=None):
 
-    sender_email = "your-email@gmail.com"
-    receiver_email = "authority-email@example.com"
-    password = "your-app-password"
+    sender_email = os.getenv("EMAIL_ID")
+    receiver_email = os.getenv("EMAIL_ID")
+    password = os.getenv("EMAIL_PASSWORD")
 
     subject = f"🚨 ALERT: Severe Crack in {dam_name}"
 
