@@ -1,0 +1,4 @@
+2026-06-23 12:11:27.443225 | KRS Dam , Karnataka | MEDIUM | https://www.google.com/maps?q=12.426713,76.571975
+2026-06-23 12:14:28.392346 |  | MEDIUM | Location not provided
+2026-06-23 12:16:11.948666 |  | MEDIUM | Location not provided
+2026-06-23 12:18:03.092705 |  | MEDIUM | Location not provided

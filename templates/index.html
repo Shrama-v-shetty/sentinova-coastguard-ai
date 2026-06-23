@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dam Monitoring System</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🏗️ Dam Monitoring System</h1>
+
+<div class="card">
+    <h3>Enter Details</h3>
+
+    <input type="text" id="dam" placeholder="Dam Name"><br><br>
+    <input type="email" id="email" placeholder="Email"><br><br>
+
+    <input type="text" id="location" placeholder="Location"><br><br>
+
+    <button onclick="getLocation()">📍 Get Live Location</button>
+    <p id="coords"></p>
+</div>
+
+<div class="card">
+    <h3>Upload Image</h3>
+
+    <input type="file" id="image"><br><br>
+
+    <button onclick="sendData()">Detect Crack</button>
+
+    <h3 id="result"></h3>
+</div>
+
+<script>
+let lat = "";
+let lon = "";
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            lat = position.coords.latitude;
+            lon = position.coords.longitude;
+
+            document.getElementById("coords").innerHTML =
+                "Lat: " + lat + " , Lon: " + lon;
+
+            document.getElementById("location").value =
+                lat + "," + lon;
+        });
+    } else {
+        alert("Geolocation not supported");
+    }
+}
+
+function sendData() {
+    let file = document.getElementById("image").files[0];
+    let dam = document.getElementById("dam").value;
+    let email = document.getElementById("email").value;
+    let location = document.getElementById("location").value;
+
+    let formData = new FormData();
+    formData.append("image", file);
+    formData.append("dam_name", dam);
+    formData.append("email", email);
+    formData.append("location", location);
+
+    fetch("/predict", {
+        method: "POST",
+        body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.status === "crack") {
+            document.getElementById("result").innerHTML =
+                "❌ Crack Detected | Severity: " + data.severity;
+        } else if (data.status === "no_crack") {
+            document.getElementById("result").innerHTML =
+                "✅ No Crack Detected";
+        } else {
+            document.getElementById("result").innerHTML =
+                "❌ Invalid Image";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
